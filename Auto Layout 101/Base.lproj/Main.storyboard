@@ -69,15 +69,27 @@
                         <viewControllerLayoutGuide type="top" id="Tx2-hL-t52"/>
                         <viewControllerLayoutGuide type="bottom" id="WGH-8z-A19"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Aur-aK-0wt">
+                    <view key="view" contentMode="scaleToFill" id="Aur-aK-0wt" userLabel="Super view">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tgc-7J-gmG" userLabel="Red View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tgc-7J-gmG" firstAttribute="bottom" secondItem="Aur-aK-0wt" secondAttribute="bottom" id="0bh-V8-xhU"/>
+                            <constraint firstItem="tgc-7J-gmG" firstAttribute="leading" secondItem="Aur-aK-0wt" secondAttribute="leading" id="3O5-2L-heA"/>
+                            <constraint firstItem="tgc-7J-gmG" firstAttribute="top" secondItem="Aur-aK-0wt" secondAttribute="top" id="CvP-Wc-Hc6"/>
+                            <constraint firstAttribute="trailing" secondItem="tgc-7J-gmG" secondAttribute="trailing" id="E0A-Vk-3Zy"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4F-Di-stL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-423" y="66"/>
+            <point key="canvasLocation" x="-423.19999999999999" y="65.217391304347828"/>
         </scene>
     </scenes>
     <resources>
